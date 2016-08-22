@@ -1,7 +1,7 @@
 {
   "name": "postcss-wprtl",
-  "version": "1.1.0",
-  "description": "PostCSS plugin for WordPress theme developers to easily generate rtl.css (uses RTLCSS)",
+  "version": "1.2.0",
+  "description": "PostCSS plugin for WordPress theme developers powered by RTLCSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,9 +24,10 @@
     "url": "https://github.com/ThemeZee/postcss-wprtl/issues"
   },
   "homepage": "https://github.com/ThemeZee/postcss-wprtl#readme",
-  "devDependencies": {
+  "dependencies": {
     "parse-css-sides": "^2.0.0",
     "postcss": "^5.1.2",
-    "postcss-discard-duplicates": "^2.0.1"
+    "postcss-discard-duplicates": "^2.0.1",
+    "rtlcss": "^2.0.6"
   }
 }
