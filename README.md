@@ -4,7 +4,7 @@
 
 By default, WordPress themes load both rtl.css and style.css stylesheets. Therefore rtl.css should only include flipped CSS rules, nothing else.
 
-##### Features
+#### Features
 * Removes all CSS declarations that are unimportant for RTL
 * Generates reset values for margins, paddings and borders
 * Flips CSS rules from LTR to RTL by using [rtlcss](https://github.com/MohammadYounes/rtlcss)
