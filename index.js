@@ -146,14 +146,6 @@ module.exports = postcss.plugin('postcss-wprtl', function (opts) {
 
 		});
 
-		// Clean up media queries.
-		css.walkAtRules('media', function (rule) {
-			if (!rule.nodes.length) {
-				rule.remove();
-			}
-			rule = cleanLineBreaks(rule);
-		});
-
 		// Clean up duplicated declarations.
 		css = postcss([duplicates]).process(css).root;
 
@@ -163,6 +155,14 @@ module.exports = postcss.plugin('postcss-wprtl', function (opts) {
 		// Remove Comments.
 		css.walkComments(comment => {
 			comment.remove();
+		});
+
+		// Clean up media queries.
+		css.walkAtRules('media', function (rule) {
+			if (!rule.nodes.length) {
+				rule.remove();
+			}
+			rule = cleanLineBreaks(rule);
 		});
 
 		// Create RTL Header.

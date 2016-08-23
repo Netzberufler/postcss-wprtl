@@ -1,6 +1,6 @@
 {
   "name": "postcss-wprtl",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "PostCSS plugin for WordPress theme developers powered by RTLCSS",
   "main": "index.js",
   "scripts": {
